@@ -1,0 +1,204 @@
+fileFormatVersion: 2
+guid: 84a13f7962d33954aa937ab997f3301a
+timeCreated: 1454187835
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: crowd_0
+    21300002: crowd_1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: crowd_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 229, y: -90}
+        - {x: 214, y: -29}
+        - {x: 223, y: -11}
+        - {x: 229, y: 20}
+        - {x: 229, y: 79}
+        - {x: 203, y: 82}
+        - {x: 197, y: 31}
+        - {x: 179, y: 5}
+        - {x: 188, y: 39}
+        - {x: 186, y: 97}
+        - {x: 133, y: 101}
+        - {x: 125, y: 96}
+        - {x: 117, y: 88}
+        - {x: 115, y: 80}
+        - {x: 115, y: 35}
+        - {x: 116, y: 25}
+        - {x: 109, y: -6}
+        - {x: 109, y: 53}
+        - {x: 114, y: 73}
+        - {x: 116, y: 88}
+        - {x: 123, y: 112}
+        - {x: 119, y: 174}
+        - {x: 95, y: 171}
+        - {x: 92, y: 165}
+        - {x: 84, y: 120}
+        - {x: 82, y: 145}
+        - {x: 16, y: 153}
+        - {x: 5, y: 112}
+        - {x: -1, y: 177}
+        - {x: -23, y: 176}
+        - {x: -29, y: 167}
+        - {x: -25, y: 115}
+        - {x: -24, y: 105}
+        - {x: -81, y: 98}
+        - {x: -84, y: 179}
+        - {x: -108, y: 179}
+        - {x: -111, y: 173}
+        - {x: -133, y: 132}
+        - {x: -179, y: 135}
+        - {x: -198, y: 127}
+        - {x: -197, y: 76}
+        - {x: -198, y: 53}
+        - {x: -212, y: 177}
+        - {x: -215, y: 178}
+        - {x: -232, y: 179}
+        - {x: -237, y: 179}
+        - {x: -239, y: 175}
+        - {x: -239, y: 110}
+        - {x: -238, y: 74}
+        - {x: -218, y: 2}
+        - {x: -230, y: -45}
+        - {x: -239, y: -142}
+        - {x: -239, y: -166}
+        - {x: -229, y: -198}
+        - {x: -194, y: -210}
+        - {x: -102, y: -214}
+        - {x: -12, y: -214}
+        - {x: 53, y: -211}
+        - {x: 119, y: -214}
+        - {x: 181, y: -214}
+        - {x: 218, y: -208}
+        - {x: 225, y: -204}
+        - {x: 229, y: -125}
+    - name: crowd_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 229, y: -25}
+        - {x: 235, y: 6}
+        - {x: 235, y: 65}
+        - {x: 209, y: 68}
+        - {x: 203, y: 17}
+        - {x: 186, y: -9}
+        - {x: 194, y: 25}
+        - {x: 192, y: 83}
+        - {x: 139, y: 87}
+        - {x: 131, y: 82}
+        - {x: 123, y: 74}
+        - {x: 121, y: 66}
+        - {x: 117, y: 8}
+        - {x: 120, y: 59}
+        - {x: 122, y: 74}
+        - {x: 129, y: 98}
+        - {x: 125, y: 160}
+        - {x: 101, y: 157}
+        - {x: 98, y: 151}
+        - {x: 90, y: 106}
+        - {x: 88, y: 131}
+        - {x: 22, y: 139}
+        - {x: 11, y: 98}
+        - {x: 5, y: 163}
+        - {x: -17, y: 162}
+        - {x: -23, y: 153}
+        - {x: -19, y: 101}
+        - {x: -18, y: 91}
+        - {x: -75, y: 84}
+        - {x: -78, y: 165}
+        - {x: -102, y: 165}
+        - {x: -105, y: 159}
+        - {x: -127, y: 118}
+        - {x: -172, y: 118}
+        - {x: -182, y: 117}
+        - {x: -192, y: 109}
+        - {x: -190, y: 59}
+        - {x: -192, y: 39}
+        - {x: -206, y: 163}
+        - {x: -209, y: 164}
+        - {x: -226, y: 165}
+        - {x: -231, y: 165}
+        - {x: -233, y: 161}
+        - {x: -233, y: 82}
+        - {x: -223, y: 21}
+        - {x: -211, y: -12}
+        - {x: -224, y: -59}
+        - {x: -233, y: -159}
+        - {x: -233, y: -179}
+        - {x: -223, y: -212}
+        - {x: -188, y: -224}
+        - {x: -95, y: -228}
+        - {x: -6, y: -228}
+        - {x: 46, y: -225}
+        - {x: 101, y: -224}
+        - {x: 117, y: -228}
+        - {x: 208, y: -228}
+        - {x: 232, y: -218}
+        - {x: 233, y: -123}
+        - {x: 225, y: -80}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
