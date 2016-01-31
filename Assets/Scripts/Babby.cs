@@ -7,6 +7,7 @@ public class Babby : MonoBehaviour {
     public float babby_speed;
     public int babby_score;
     public int babby_crowd;
+    //Potato
 
 	// Use this for initialization
 	void Start () {
