@@ -21,7 +21,7 @@ public class p1_blanketdrop : MonoBehaviour {
             hinge.enabled = !hinge.enabled;
             pc1.isHoldingBlanket = hinge.enabled;
             SpriteRenderer sr = pc1.GetComponent<SpriteRenderer>();
-            if (sr.flipX) sr.flipX = false;
+            //if (sr.flipX) sr.flipX = false;
         }
 	}
 }
