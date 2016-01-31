@@ -46,8 +46,8 @@ public class PlayerController : MonoBehaviour {
         if (!isHoldingBlanket)
         {
             animator.SetBool("isCatching", true);
-            if (horizontal > 0) sr.flipX = false;
-            else if (horizontal < 0) sr.flipX = true;
+            //if (horizontal > 0) sr.flipX = false;
+            //else if (horizontal < 0) sr.flipX = true;
         }
         else animator.SetBool("isCatching", false);
 

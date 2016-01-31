@@ -22,7 +22,7 @@ public class p2_blanket : MonoBehaviour {
             hinge2.enabled = !hinge2.enabled;
             pc2.isHoldingBlanket = hinge2.enabled;
             SpriteRenderer sr = pc2.GetComponent<SpriteRenderer>();
-            if (sr.flipX) sr.flipX = false;
+            //if (sr.flipX) sr.flipX = false;
         }
     }
 }

@@ -45,7 +45,8 @@ public class ScoreKeeper : MonoBehaviour {
     void Update () {
 	    if(m_currentCrowd <= 0)
         {
-            //GAME OVER
+            PlayerPrefs.SetInt("Score", m_babiesCaught);
+            Application.LoadLevel("GameOver");
         }
 	}
 

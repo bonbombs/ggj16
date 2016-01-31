@@ -46,15 +46,18 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Babby.cs" />
+     <Compile Include="Assets\Scripts\BabySpawnController.cs" />
      <Compile Include="Assets\Scripts\Catch_Babby_P1.cs" />
      <Compile Include="Assets\Scripts\Catch_Babby_P2.cs" />
      <Compile Include="Assets\Scripts\CrowdController.cs" />
      <Compile Include="Assets\Scripts\Destroy_Babby.cs" />
+     <Compile Include="Assets\Scripts\Game_Over_Score.cs" />
      <Compile Include="Assets\Scripts\Launch_Babby.cs" />
+     <Compile Include="Assets\Scripts\PlayButton.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerTurnController.cs" />
+     <Compile Include="Assets\Scripts\ScoreKeeper.cs" />
      <Compile Include="Assets\Scripts\Throw_Babby.cs" />
-     <Compile Include="Assets\Scripts\blanketdrop.cs" />
      <Compile Include="Assets\Scripts\p1_blanketdrop.cs" />
      <Compile Include="Assets\Scripts\p2_blanket.cs" />
      <Compile Include="Assets\Scripts\playermovement.cs" />
