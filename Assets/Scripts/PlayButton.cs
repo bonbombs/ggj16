@@ -5,6 +5,7 @@ using System.Collections;
 public class PlayButton : MonoBehaviour {
 
     private Button button;
+    public string scene;
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +25,6 @@ public class PlayButton : MonoBehaviour {
     void goToScene()
     {
         Debug.Log("Going to main level");
-        Application.LoadLevel("Main");
+        Application.LoadLevel(scene);
     }
 }
