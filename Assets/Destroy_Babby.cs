@@ -16,6 +16,11 @@ public class Destroy_Babby : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Babby")
+        {
+            //Babby dropped
+            ScoreKeeper sk = ScoreKeeper.Instance;
+            sk.currentCrowd = sk.currentCrowd - 1;
             Destroy(collision.gameObject);
+        }
     }
 }

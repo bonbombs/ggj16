@@ -17,6 +17,8 @@ public class Catch_Babby_P1 : MonoBehaviour {
         {
             if (!p1 && col.gameObject.GetComponent<Babby>().get_bouncy() != 0)
             {
+                ScoreKeeper sk = ScoreKeeper.Instance;
+                sk.addBabyScore(sk.babiesCaught+1);
                 Destroy(col.gameObject);
                 Debug.Log("Player 1 Caught the Babby");
             }

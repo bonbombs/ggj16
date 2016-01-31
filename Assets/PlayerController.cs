@@ -8,24 +8,21 @@ public class PlayerController : MonoBehaviour {
     [SerializeField]
     private int playerNum;
 
-    public bool isHoldingBlanket = false;
+    public bool isHoldingBlanket = true;
 
     private string playerAxis;
-    private string playerDropBlanketKey;
     private Animator animator;
     private SpriteRenderer sr;
     private Text label;
     private Vector3 labelOffset = new Vector3(0, 1.5f);
     [SerializeField]
     float speed = 5.0f;
-    public float drop;
 
     private Vector3 moveDirection;
 
 	// Use this for initialization
 	void Start () {
         playerAxis = "P" + playerNum + "_Horizontal";
-        playerDropBlanketKey = "P" + playerNum + "_Drop_Blanket";
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         Text[] labels = FindObjectsOfType<Text>();
@@ -38,7 +35,6 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         float horizontal = Input.GetAxis(playerAxis);
-        drop = Input.GetAxis(playerDropBlanketKey);
         if (horizontal != 0) animator.SetBool("isMoving", true);
         else animator.SetBool("isMoving", false);
         moveDirection = new Vector3(horizontal, 0, 0);
@@ -49,11 +45,11 @@ public class PlayerController : MonoBehaviour {
 
         if (!isHoldingBlanket)
         {
-            //if (horizontal > 0) sr.flipX = false;
-            //else if (horizontal < 0) sr.flipX = true;
+            animator.SetBool("isCatching", true);
+            if (horizontal > 0) sr.flipX = false;
+            else if (horizontal < 0) sr.flipX = true;
         }
-
-        if (drop != 0) isHoldingBlanket = !isHoldingBlanket;
+        else animator.SetBool("isCatching", false);
 
         if (Input.GetKey(KeyCode.Escape))
         {
