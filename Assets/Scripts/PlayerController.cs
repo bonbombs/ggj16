@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour {
     private Vector3 labelOffset = new Vector3(0, 1.5f);
     [SerializeField]
     float speed = 5.0f;
+    public float drop;
 
     private Vector3 moveDirection;
 
@@ -37,7 +38,7 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         float horizontal = Input.GetAxis(playerAxis);
-        float drop = Input.GetAxis(playerDropBlanketKey);
+        drop = Input.GetAxis(playerDropBlanketKey);
         if (horizontal != 0) animator.SetBool("isMoving", true);
         else animator.SetBool("isMoving", false);
         moveDirection = new Vector3(horizontal, 0, 0);
