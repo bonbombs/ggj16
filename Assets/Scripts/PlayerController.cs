@@ -42,6 +42,7 @@ public class PlayerController : MonoBehaviour {
         moveDirection *= speed;
         transform.position += moveDirection * Time.deltaTime;
         label.transform.position = transform.position + labelOffset;
+        Debug.Log(label.transform.position);
 
         if (!isHoldingBlanket)
         {
