@@ -3,9 +3,12 @@ using System.Collections;
 
 public class Destroy_Babby : MonoBehaviour {
 
+    public AudioClip boo;
+    private AudioSource source;
+
     // Use this for initialization 
-	void Start () {
-  
+    void Start () {
+        source = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -19,6 +22,7 @@ public class Destroy_Babby : MonoBehaviour {
         {
             //Babby dropped
             ScoreKeeper sk = ScoreKeeper.Instance;
+            source.PlayOneShot(boo, .75f);
             sk.currentCrowd = sk.currentCrowd - 1;
             Destroy(collision.gameObject);
         }
