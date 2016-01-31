@@ -7,10 +7,14 @@ public class Launch_Babby : MonoBehaviour {
     private p1_blanketdrop blank1;
     private p2_blanket blank2;
 
+    public AudioClip babycry;
+    private AudioSource source;
+
     void Start()
     {
         blank1 = FindObjectOfType<p1_blanketdrop>();
         blank2 = FindObjectOfType<p2_blanket>();
+        source = GetComponent<AudioSource>();
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -23,6 +27,7 @@ public class Launch_Babby : MonoBehaviour {
             {
                 col.gameObject.GetComponent<Babby>().set_bouncy(col.gameObject.GetComponent<Babby>().get_bouncy() + 1);
                 col.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 500));
+                source.PlayOneShot(babycry, 1f);
             }
         }
     }

@@ -29,6 +29,7 @@ public class ScoreKeeper : MonoBehaviour {
 
     private float m_currentCrowd = 0;
     private int m_babiesCaught = 0;
+    private bool crowdhype = true;
 
 	// Use this for initialization
 	void Start () {
@@ -36,7 +37,7 @@ public class ScoreKeeper : MonoBehaviour {
             Destroy(gameObject);
         
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
         m_currentCrowd = maxCrowd / 2;
         currentBar.fillAmount = currentCrowd / maxCrowd;
     }
@@ -54,7 +55,10 @@ public class ScoreKeeper : MonoBehaviour {
     {
         babyCount.text = newVal.ToString();
         m_babiesCaught = newVal;
-        updateMeter(newVal + currentCrowd);
+        if (crowdhype)
+            updateMeter(1 + currentCrowd);
+        else
+            crowdhype = true;
     }
 
     void updateMeter(float newVal)
@@ -62,5 +66,6 @@ public class ScoreKeeper : MonoBehaviour {
         if (newVal > maxCrowd) return;
         m_currentCrowd = newVal;
         currentBar.fillAmount = newVal / maxCrowd;
+        crowdhype = false;
     }
 }
