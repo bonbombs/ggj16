@@ -48,8 +48,8 @@ public class PlayerController : MonoBehaviour {
 
         if (!isHoldingBlanket)
         {
-            if (horizontal > 0) sr.flipX = false;
-            else if (horizontal < 0) sr.flipX = true;
+            //if (horizontal > 0) sr.flipX = false;
+            //else if (horizontal < 0) sr.flipX = true;
         }
 
         if (drop != 0) isHoldingBlanket = !isHoldingBlanket;
